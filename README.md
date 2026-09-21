@@ -2,7 +2,7 @@
 
 ## use:
 ``
-powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0export-datac.ps1" -SQLFile ... -SERVER ... -DATABASE ... -DELIMITER ...
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0export-data.ps1" -SQLFile ... -SERVER ... -DATABASE ... -DELIMITER ...
 ``
 ### default parameter
 * **-SQLFile**: mandatory
