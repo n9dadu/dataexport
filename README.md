@@ -11,4 +11,4 @@ powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0export-dat
 * *-DELIMITER*: optional - default=``;``
 ## description:
 * The SQLFile must exist in the same folder of script
-* data exported to ``SQLFile`.csv (e.g C:\...\Data-Query.sql.csv)
+* data exported to ``SQLFile``.csv (e.g C:\...\Data-Query.sql.csv)
