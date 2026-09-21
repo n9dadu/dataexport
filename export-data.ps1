@@ -3,8 +3,9 @@ param(
     [string]$SQLFile,
 
     [string]$SERVER = "localhost",
-
     [string]$DATABASE = "test"
+    
+    [string]$Delimiter = ";"
 )
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
@@ -23,5 +24,5 @@ $SqlConnection.Close()
 $table = $DataSet.Tables[0]
 Write-Host "SQL script execution completed. Exporting $($table.Rows.Count) rows to CSV."
 
-$table | Export-Csv -Path "$ScriptDir\Check-EmptyYEars.csv" -NoTypeInformation
-Write-Host "DONE. Results exported to CSV: $ScriptDir\Check-EmptyYEars.csv"
+$table | Export-Csv -Path "$ScriptDir\$SQLFile.csv" -NoTypeInformation -Delimiter $Delimiter
+Write-Host "DONE. Results exported to CSV: $ScriptDir\$SQLFile.csv"
