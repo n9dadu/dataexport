@@ -1,6 +1,11 @@
-$SERVER = "localhost"
-$DATABASE = "dbname"
-$SQLFile = "sqlfile.sql"
+param(
+    [Parameter(Mandatory = $true)]
+    [string]$SQLFile,
+
+    [string]$SERVER = "localhost",
+
+    [string]$DATABASE = "test"
+)
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $ConnectionString = "Server=$SERVER;Database=$DATABASE;Integrated Security=True;"
