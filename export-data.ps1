@@ -3,7 +3,7 @@ param(
     [string]$SQLFile,
 
     [string]$SERVER = "localhost",
-    [string]$DATABASE = "test"
+    [string]$DATABASE = "test",
     
     [string]$Delimiter = ";"
 )
