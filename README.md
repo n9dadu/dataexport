@@ -10,5 +10,6 @@ powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0export-dat
 * **-DATABASE**: optional, default= ``test``
 * **-DELIMITER**: optional - default=``;``
 ## description:
+* The connection use "Windows NT integrated security" to login
 * The SQLFile must exist in the same folder of script
 * data exported to ``SQLFile``.csv (e.g C:\\...\\Data-Query.sql.csv)
